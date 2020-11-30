@@ -1,5 +1,7 @@
 # BDFI 2020
 
+# José María Vírseda Bang y Víctor García Ruiz
+
 A continuación se describe como realizar el despliegue de los múltiples servicios tanto en local como en contenedores Docker.
 
 
@@ -78,8 +80,7 @@ mongo
 Para la correcta ejecución en local de todo lo explicado habría que tener descargado java,scala, spark y mongo db ya que no se ha podido proporcionar el código que automatiza eso. Sin embargo, a continuación explicamos como con Docker logramos quitarnos estos problemas de en medio.
 
 
-#################################DOCKER#####################################################
-
+# Docker
 
 
 ##Extraemos el zip y lanzamos Docker. Posteriormente llamamos al archivo download_data.sh para descargar los datos, este paso es necesario porque se borran los datos para evitar que ocupen mucho espacio
@@ -91,7 +92,7 @@ resources/download_data.sh
 docker-compose up
 ```
 
-####Docker en Google cloud. IP dinámica desde la que se accede correctamente en el momento de la realización.
+# Docker en Google cloud. IP dinámica desde la que se accede correctamente en el momento de la realización.
 
 ```bash
 34.107.117.123:5000/flights/delays/predict_kafka
