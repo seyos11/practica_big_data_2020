@@ -69,7 +69,8 @@ cd practica_big_data_2019/resources/web
 python3 predict_flask.py
 ```
 Ahora podríamos ir a la página http://localhost:5000/flights/delays/predict_kafka e interactuar con el servicio para finalmente ver cómo se devuelven las predicciones que a su vez están guardadas en mongoDB.
-````bash
+
+```bash
 mongo
  > use use agile_data_science;
  >db.flight_delay_classification_response.find();
@@ -83,7 +84,7 @@ Para la correcta ejecución en local de todo lo explicado habría que tener desc
 
 ##Extraemos el zip y lanzamos Docker. Posteriormente llamamos al archivo download_data.sh para descargar los datos, este paso es necesario porque se borran los datos para evitar que ocupen mucho espacio
 
-````bash
+```bash
 unzip practica_big_data_2020.zip
 cd practica_big_data_2020
 resources/download_data.sh
@@ -92,7 +93,7 @@ docker-compose up
 
 ####Docker en Google cloud. IP dinámica desde la que se accede correctamente en el momento de la realización.
 
-````bash
+```bash
 34.107.117.123:5000/flights/delays/predict_kafka
 ```
 
